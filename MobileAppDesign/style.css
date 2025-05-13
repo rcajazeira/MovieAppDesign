@@ -9,4 +9,43 @@
 body {
     height: 100vh;
     width: 100%;
+    background-color: #5c5757;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.mobile1,
+.mobile2,
+.mobile3 {
+  width: 350px;
+  height: 750px;
+  border-radius: 30px;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mobile1 {
+  background-image: url('/mnt/data/05826f15-1f54-4c97-b4fa-dac6cb75ca15.png');
+  background-position: left top;
+  background-size: 750px auto; /* Ajuste conforme a imagem original */
+}
+
+.mobile2 {
+  background-image: url('/mnt/data/05826f15-1f54-4c97-b4fa-dac6cb75ca15.png');
+  background-position: center top;
+  background-size: 750px auto;
+}
+
+.mobile3 {
+  background-image: url('/mnt/data/05826f15-1f54-4c97-b4fa-dac6cb75ca15.png');
+  background-position: right top;
+  background-size: 750px auto;
 }
