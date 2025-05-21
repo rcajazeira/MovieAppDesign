@@ -1,0 +1,172 @@
+/* Basic Reset & Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #1A1A1A; /* Very dark background */
+    color: #E0E0E0; /* Light gray for default text */
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.movie-detail-screen {
+    max-width: 420px; /* Simulate phone width */
+    margin: 0 auto;
+    background-color: #1A1A1A;
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Image Section */
+.hero-image-container {
+    height: 55vh; /* Adjust height as needed, e.g., 50% of viewport height */
+    /* --- REPLACE WITH YOUR IMAGE --- */
+    background-image: linear-gradient(to bottom, rgba(26,26,26,0.1) 0%, rgba(26,26,26,0.7) 80%, rgba(26,26,26,1) 100%), url('https://br.web.img3.acsta.net/pictures/bzp/01/29007.jpg');
+    background-size: cover;
+    background-position: center top; /* Adjust to focus on the character's upper body */
+    position: relative; /* For absolute positioning of the back button */
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.3); /* Slight dark background for better visibility */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+.back-button:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.back-button svg {
+    display: block; /* Prevents small gap under SVG */
+}
+
+
+/* Movie Info Content Below Image */
+.movie-info-content {
+    padding: 20px 20px 30px 20px; /* Add more bottom padding for the button */
+    background-color: #1A1A1A; /* Same as body background */
+    flex-grow: 1; /* Allows this section to grow if content is short */
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text block to top, icon to top */
+    margin-bottom: 15px;
+}
+
+.title-block {
+    flex-grow: 1;
+}
+
+.movie-label {
+    font-size: 13px;
+    color: #E74C3C; /* Orange-red color */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.movie-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.movie-genres {
+    font-size: 14px;
+    color: #999999; /* Lighter gray */
+    margin: 0;
+}
+
+.bookmark-button {
+    background: none;
+    border: none;
+    color: #E74C3C; /* Orange-red for the icon */
+    cursor: pointer;
+    padding: 5px; /* Clickable area */
+    margin-left: 10px; /* Space from text block */
+}
+.bookmark-button svg {
+    display: block;
+}
+
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #B0B0B0; /* Slightly lighter gray for description */
+    margin-bottom: 25px;
+}
+
+.info-tags-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow tags to wrap if they don't fit */
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.info-tag {
+    background-color: #333333; /* Dark gray for tags */
+    color: #C0C0C0; /* Text color inside tags */
+    padding: 6px 12px;
+    border-radius: 15px; /* Pill shape */
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex; /* To align icon and text */
+    align-items: center;
+}
+
+.tag-icon {
+    margin-right: 5px;
+    display: block;
+}
+.tag-icon svg {
+    display: block;
+}
+
+
+.watch-now-button {
+    background-color: #E74C3C; /* Orange-red color */
+    color: #ffffff;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 28px; /* Rounded button */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    margin-top: auto; /* Pushes button to the bottom if content is short */
+    transition: background-color 0.2s ease;
+}
+.watch-now-button:hover {
+    background-color: #D64535; /* Darker shade on hover */
+}
+
+.play-icon {
+    margin-right: 8px;
+    display: block; /* Ensures SVG behaves as expected */
+}
+.play-icon svg {
+    display: block;
+}
