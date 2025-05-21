@@ -18,7 +18,7 @@ body, html {
     width: 100vw;  /* Largura total da viewport */
     
     /* --- SUBSTITUA 'YOUR_SPIDERMAN_IMAGE.jpg' PELO CAMINHO DA SUA IMAGEM --- */
-    background-image: url('YOUR_SPIDERMAN_IMAGE.jpg'); 
+    background-image: url('https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/f39b2588-fc58-4c63-a0dd-5ce4412c10f5/edd336c1-abfc-4803-8c66-cf58d89a105c.png'); 
     background-size: cover; /* Cobre toda a área */
     background-position: center top; /* Ajuste para manter a cabeça do Homem-Aranha visível */
     background-repeat: no-repeat;
