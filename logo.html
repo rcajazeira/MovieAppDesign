@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App Home</title>
+    <link rel="stylesheet" href="style_home.css">
+    <!-- Optional: Font Awesome for icons (Example) -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="profile-info">
+                <img src="https://www.petz.com.br/blog/wp-content/uploads/2020/07/gato-dengoso.jpg" alt="User Profile" class="profile-picture">
+                <div class="profile-text">
+                    <h2>Hello Manoj</h2>
+                    <p>Enjoy your favourite movie</p>
+                </div>
+            </div>
+            <div class="notification-icon">
+                <!-- Placeholder for Bell Icon (e.g., <i class="fas fa-bell"></i>) -->
+                🔔
+                <span class="notification-dot"></span>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <!-- Placeholder for Search Icon (e.g., <i class="fas fa-search"></i>) -->
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search Movie...">
+        </div>
+
+        <main class="content-area">
+            <section class="movie-row">
+                <h2>Popular Movies</h2>
+                <div class="horizontal-scroll">
+                    <div class="movie-card">
+                        <img src="https://legadodamarvel.com.br/wp-content/uploads/2024/08/vingadores-5-poster-incrivel-epico-legadodamarvel.webp" alt="Avengers">
+                        <div class="card-info">
+                            <h3>Avengers</h3>
+                            <p>Adventure, Action</p>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <!-- SPIDER-MAN LINK -->
+                        <a href="SUA_PAGINA_DO_SPIDERMAN.html" target="_blank" class="poster-link">
+                            <img src="https://assets.gamearena.gg/wp-content/uploads/2023/10/29211358/spidey.jpeg" alt="Spider-Man">
+                        </a>
+                        <div class="card-info">
+                            <h3>Spider-Man</h3>
+                            <p>Action, Comedy</p>
+                        </div>
+                    </div>
+                    <!-- Add more popular movie cards here if needed -->
+                </div>
+            </section>
+
+            <section class="movie-row">
+                <h2>TV Series</h2>
+                <div class="horizontal-scroll">
+                    <div class="movie-card small-card">
+                        <img src="https://s.aficionados.com.br/imagens/see-serie-com-jason-momoa-ganha-seu-primeiro-trailer_f.jpg" alt="SEE">
+                        <div class="card-info">
+                            <h3>SEE</h3>
+                            <p>Action, Adventure</p>
+                        </div>
+                    </div>
+                    <div class="movie-card small-card">
+                        <img src="https://i.ytimg.com/vi/xnRYs0FICFU/maxresdefault.jpg" alt="The Lake">
+                        <div class="card-info">
+                            <h3>THE LAKE</h3>
+                            <p>Drama</p>
+                        </div>
+                    </div>
+                    <div class="movie-card small-card">
+                        <img src="mo-poster.jpg" alt="MO">
+                        <div class="card-info">
+                            <h3>MO</h3>
+                            <p>Comedy, Drama</p>
+                        </div>
+                    </div>
+                    <!-- Add more TV series cards here if needed -->
+                </div>
+            </section>
+
+            <section class="movie-row">
+                <h2>You might also like</h2>
+                <div class="horizontal-scroll">
+                    <div class="movie-card">
+                        <img src="fast-furious-poster.jpg" alt="Fast and Furious">
+                         <!-- Card info would go here -->
+                    </div>
+                    <div class="movie-card">
+                        <img src="shrek2-poster.jpg" alt="Shrek 2">
+                         <!-- Card info would go here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <!-- Placeholder for Home Icon (e.g., <i class="fas fa-home"></i>) -->
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- Placeholder for Play/Videos Icon (e.g., <i class="fas fa-play-circle"></i>) -->
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- Placeholder for Bookmark Icon (e.g., <i class="fas fa-bookmark"></i>) -->
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></svg>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- Placeholder for Profile Icon (e.g., <i class="fas fa-user"></i>) -->
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
