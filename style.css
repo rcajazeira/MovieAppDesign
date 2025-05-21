@@ -1,0 +1,134 @@
+/* Reset Básico e Fonte */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', Arial, sans-serif; /* Usando Roboto como uma boa fonte sans-serif */
+    background-color: #000000; /* Cor de fundo caso a imagem falhe */
+    color: #ffffff;
+    overflow: hidden; /* Evita barras de rolagem se o conteúdo exceder um pouco */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app-screen {
+    height: 100vh; /* Altura total da viewport */
+    width: 100vw;  /* Largura total da viewport */
+    
+    /* --- SUBSTITUA 'YOUR_SPIDERMAN_IMAGE.jpg' PELO CAMINHO DA SUA IMAGEM --- */
+    background-image: url('YOUR_SPIDERMAN_IMAGE.jpg'); 
+    background-size: cover; /* Cobre toda a área */
+    background-position: center top; /* Ajuste para manter a cabeça do Homem-Aranha visível */
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o header para cima e o conteúdo (tagline/botões) para baixo */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+
+    /* Simula uma largura de tela de celular para melhor representação visual */
+    /* Para design responsivo real, use media queries. Isso é para corresponder à captura de tela. */
+    /* Se você quiser que ocupe a largura total do navegador, remova max-width e margin: 0 auto */
+    max-width: 414px; /* Largura comum de celular (ex: iPhone Xr/11), ajuste conforme necessário */
+    margin: 0 auto;   /* Centraliza a tela de largura restrita */
+    position: relative; 
+}
+
+.app-header {
+    text-align: center;
+    padding-top: 40px; /* Espaço do topo, ajuste conforme o visual da sua imagem */
+    width: 100%;
+}
+
+.app-header h1 {
+    font-size: 48px; /* Tamanho grande para o logo */
+    font-weight: 900; /* Bem negrito */
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra sutil para destaque */
+}
+
+.app-header .plus-sign {
+    color: #E74C3C; /* Cor vermelho-alaranjado (similar à imagem) */
+}
+
+.app-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px; /* Espaço da parte inferior */
+}
+
+.tagline {
+    font-size: 15px; 
+    color: #E0E0E0; /* Cinza claro, não branco puro */
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px; /* Espaço acima dos botões */
+    max-width: 300px; /* Evita que o texto fique muito largo */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Sombra para legibilidade sobre a imagem */
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaço entre os botões */
+}
+
+.btn {
+    width: 90%;
+    max-width: 320px; /* Largura máxima do botão */
+    padding: 16px 20px;
+    border: none;
+    border-radius: 28px; /* Cantos bem arredondados */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+.btn-signin {
+    background-color: #E74C3C; /* Vermelho-alaranjado */
+    color: #ffffff;
+}
+
+.btn-signin:hover {
+    background-color: #d64535; /* Tom um pouco mais escuro no hover */
+}
+
+.btn-google {
+    background-color: #3A3A3A; /* Cinza escuro (similar à imagem) */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google:hover {
+    background-color: #2c2c2c; /* Tom um pouco mais escuro no hover */
+}
+
+.google-logo {
+    font-weight: bold; /* 'G' em negrito */
+    font-size: 20px;   /* 'G' um pouco maior */
+    margin-right: 10px;
+    /* Se fosse usar um SVG real para o G:
+    width: 20px;
+    height: 20px;
+    background-image: url('caminho/para/google-g.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    */
+}
